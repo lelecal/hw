@@ -1,0 +1,35 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Введите размер: ");
+
+        int sizeArray = Convert.ToInt32(Console.ReadLine());
+
+	//Объявляем массив на n-количество введённого с клавиатуры
+        int[] array = new int[sizeArray];
+
+        Console.WriteLine("Введите числа: ");
+
+
+	// Вводим элементы массива с клавиатуры
+        for (int i = 0; i < sizeArray; i++)
+        {
+            array[i] = Convert.ToInt32(Console.ReadLine());
+        }
+
+        Console.WriteLine("Результат: ");
+
+
+	//Пересчитываем элементы массива
+        for (int i = 1; i < sizeArray; i++)
+        {
+	        // Проверяем элементы, если один из предыдущего больше - выводим результат
+            if (array[i] > array[i - 1])
+            {
+                Console.WriteLine(array[i]);
+            }
+        }
+
+    }
+}

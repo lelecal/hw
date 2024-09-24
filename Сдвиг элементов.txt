@@ -1,0 +1,37 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Введите размер: ");
+
+        int sizeArray = Convert.ToInt32(Console.ReadLine());
+        int[] array = new int[sizeArray];
+
+        Console.WriteLine("Введите числа: ");
+
+        for (int i = 0; i < sizeArray; i++)
+        {
+            array[i] = Convert.ToInt32(Console.ReadLine());
+        }
+
+        Console.WriteLine("Ответ: ");
+
+        // Сохраняем последний элемент массива
+        int A1 = array[array.Length - 1];
+
+        // Сдвигаем все элементы массива вправо
+        for (int c = sizeArray - 1; c > 0; c--)
+        {
+            array[c] = array[c - 1];
+        }
+
+        // Присваиваем первому элементу значение последнего
+        array[0] = A1;
+
+        // Выводим измененный массив
+        foreach (int i in array)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}
