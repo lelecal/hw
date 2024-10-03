@@ -1,0 +1,123 @@
+class Program
+{
+
+    public static double funcOne(double x)
+    {
+        /* SPECIAL MARK LINE */
+
+        return x % 2 != 0 ? x = 0 : x / 2;
+    }
+
+    public static double funcTwo(double x)
+    {
+        /* ANOTHER ONE */
+
+        return x % 5 != 0 ? x / 5 : x += 1;
+
+    }
+
+    public static int funcThree(int x)
+    {
+        /* JUST A BIT MORE */
+
+
+        if (x < 100 & x >= 10)
+        {
+            int n = x % 10;
+            int b = x / 10;
+            Console.WriteLine(n + b);
+            return x;
+        }
+        else
+        {
+            Console.WriteLine(x);
+            return x;
+        }
+
+    }
+
+
+    public static int funcFour(int x)
+    {
+        /* AGAIN */
+
+        if (x >= 100 & x < 1000) {
+            int a = x % 10;
+            int b = x / 100;
+            int c = x / 10 % 10;
+            Console.WriteLine(a + c + b);
+            return x;
+        } else {
+            Console.WriteLine(x);
+            return x;
+        }
+    }
+
+    public static double funcFive(double a, double b)
+    {
+
+        double c = Math.Sqrt(a * a + b * b);
+
+
+        Console.WriteLine(c);
+
+
+        double AB = double.Parse(Console.ReadLine());
+        double AC = double.Parse(Console.ReadLine());
+        double DC = double.Parse(Console.ReadLine());
+
+
+
+        double BC = Math.Sqrt(AB * AB + AC * AC);
+        double ABCD = AB + AC + DC + Math.Sqrt(BC * BC + DC * DC);
+        Console.WriteLine(ABCD);
+        return ABCD;
+
+    }
+
+    public static void Main(string[] args)
+    {
+
+
+        // 1
+
+        Console.WriteLine("Задание - 1");
+        int one = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine(funcOne(one));
+
+        // 2
+
+        Console.WriteLine("Задание - 2");
+        int two = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine(funcTwo(two));
+
+        // 3
+        Console.WriteLine("Задание - 3");
+        int three = int.Parse(Console.ReadLine());
+
+        funcThree(three);
+
+        // 4
+        Console.WriteLine("Задание - 4");
+        int four = int.Parse(Console.ReadLine());
+
+        funcFour(four);
+
+        // 5
+        Console.WriteLine("Задание - 5");
+        double a = int.Parse(Console.ReadLine());
+        double b = int.Parse(Console.ReadLine());
+        funcFive(a, b);
+
+
+
+
+
+        /* LET'S END THOSE LINES HELL */
+
+
+
+    }
+}
