@@ -21,9 +21,9 @@ class Program
     {
 
         if (a % 2 == 0) {
-            Console.WriteLine("×èñëî ÿâëÿåòñÿ ÷åòíûì");
+            Console.WriteLine("Число чётное");
         } else {
-            Console.WriteLine("×èñëî íå ÿâëÿåòñÿ ÷åòíûì");
+            Console.WriteLine("Число нечётное");
         }
     }
     */
