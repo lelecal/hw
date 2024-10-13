@@ -1,0 +1,138 @@
+using System.Numerics;
+
+class Program
+{
+
+    /*
+     * Задание 1
+     public static void Sum(double par1, double par2, double result)
+     {
+
+         result = num1 + num2;
+         Console.WriteLine("Сумма чисел {0}", result);
+     }
+     */
+
+
+
+    /*
+     * Задание 2
+    public static void Chotnost(int a)
+    {
+
+        if (a % 2 == 0) {
+            Console.WriteLine("Число является четным");
+        } else {
+            Console.WriteLine("Число не является четным");
+        }
+    }
+    */
+
+
+
+    /*
+     * Задание 3
+     public static BigInteger Factorial(long n)
+     {
+       var factorial = new BigInteger(1);
+       for (int i = 1; i <= n; i++)
+           factorial *= i;
+       Console.WriteLine(factorial);
+
+       return factorial;
+     }
+    */
+
+
+
+    /* 
+     * Задание 4
+     * 
+    public static string Reverse(string strin)
+    {
+
+        char[] charArray = strin.ToCharArray();
+        Array.Reverse(charArray);
+        return new string(charArray);
+
+    }
+    */
+
+
+    /*
+     * Задание 5
+    private static bool Palindrom(string str)
+    {
+        for (int i = 0; i < str.Length; i++)
+            if (str[i] != str[str.Length - i - 1]) return false;
+        return true;
+    } 
+    */
+
+
+    //public static void sredmassive()
+    //{
+    //    Console.WriteLine("Введите длинну массива: ");
+
+    //    int numerical = int.Parse(Console.ReadLine());
+    //    Console.Clear();
+
+    //    double[] avgarr = new double[numerical];
+
+    //    for (int i = 0; i < avgarr.Length; i++)
+    //    {
+
+    //        avgarr[i] = double.Parse(Console.ReadLine());
+
+    //    }
+    //    Console.WriteLine("Среднее значение массива {0}", (avgarr.Sum() / avgarr.Length));
+
+    //}
+
+
+
+
+
+
+    static void Main(string[] args)
+    {
+        //Console.WriteLine("Введите число ");
+
+
+
+        /*
+         * Задание 6
+        sredmassive();
+        */
+
+
+        /*
+         * Вводные переменные
+        long num1 = Convert.ToInt32(Console.ReadLine());
+        int num2 = Convert.ToInt32(Console.ReadLine());
+        int result = 0;
+        */
+
+
+        /*
+         * Задание 2
+        Chostnost(num1);
+        */
+
+
+        /* 
+         * Задание 4
+        string original = Console.ReadLine();
+        string reversed = Reverse(original);
+        Console.WriteLine("Оригинал: " + original);
+        Console.WriteLine("Обратный порядок: " + reversed);
+        */
+
+        /*
+         * Задание 5
+        string palindword = Console.ReadLine();
+        Console.WriteLine(Palindrom(palindword));
+        */
+    }
+    
+}
